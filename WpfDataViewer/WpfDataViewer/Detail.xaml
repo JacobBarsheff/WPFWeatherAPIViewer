@@ -1,0 +1,48 @@
+﻿<Window x:Class="WpfDataViewer.Detail"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfDataViewer"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        mc:Ignorable="d"
+        Title="Detail" Height="464.617" Width="473.201" Activated="Window_Activated">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FFBDF6FF" Offset="0"/>
+            <GradientStop Color="#FF00A0B9" Offset="0.218"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <StackPanel HorizontalAlignment="Left" Height="391" Margin="10,10,10,10" VerticalAlignment="Top" Width="435">
+        <Label x:Name="lbl_City" Height="59" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="City" Background="{x:Null}" FontSize="38" Foreground="White" BorderBrush="{x:Null}"/>
+        <Image x:Name="picture_weatherIcon" Height="100"/>
+        <Grid>
+            <GroupBox Header="Location" Height="96" Margin="0,0,222,0">
+                <StackPanel HorizontalAlignment="Left" Height="86" Margin="10,0,-2,-12" VerticalAlignment="Top" Width="193">
+                    <Label x:Name="lbl_Country" Content="Country" Margin="0,0,0,0"/>
+                    <Label x:Name="lbl_Long" Content="Longitude" Margin="0,0,0,0"/>
+                    <Label x:Name="lbl_lat" Content="Latitude" Margin="0,0,0,0"/>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Header="Current Conditions" Margin="218,0,10,-34">
+                <StackPanel HorizontalAlignment="Left" Height="107" Margin="10,0,-2,-12" VerticalAlignment="Top" Width="187">
+                    <Label x:Name="lbl_Temp" Content="Temp" Margin="0,0,0,0"/>
+                    <Label x:Name="lbl_Cloud" Content="Cloud overage" Margin="0,0,0,0"/>
+                    <Label x:Name="lbl_weatherDesc" Content="Weather Desc" Margin="0,0,0,0"/>
+                    <Label x:Name="lbl_WindSpeed" Content="WindSpeed" Margin="0,0,0,0"/>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Header="Additional Details" Margin="0,101,228,-135">
+                <StackPanel HorizontalAlignment="Left" Margin="10,0,-2,3" Width="187">
+                    <Label x:Name="lbl_WindDeg" Content="Wind Temp" Margin="0,0,0,0"/>
+                    <Label x:Name="lbl_Humidity" Content="Humidity" Margin="0,0,0,0"/>
+                    <Label x:Name="lbl_Pressure" Content="Pressure" Margin="0,0,0,0"/>
+                </StackPanel>
+            </GroupBox>
+            <syncfusion:ButtonAdv Margin="366,193,10,-135" Label="Close" Background="{x:Null}" Foreground="White" BorderThickness="3" BorderBrush="{x:Null}" IconHeight="0" IconWidth="0" Click="ButtonAdv_Click"/>
+        </Grid>
+
+
+    </StackPanel>
+
+</Window>
